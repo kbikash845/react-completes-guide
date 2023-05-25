@@ -4,7 +4,7 @@ import "./ExpenseDate.css"
 
 
 
-function ExpanseDate(props) {
+const ExpanseDate=(props) =>{
     const Month=props.date.toLocaleString("en-Us",{month:"long"});
     const day=props.date.toLocaleString("en-Us",{day:"2-digit"});
     const year=props.date.getFullYear();
