@@ -8,7 +8,7 @@ import Expanse from './Components/Expenses/Expanse';
 
 
 
-function App() {
+const App=() =>{
   const expanses=[
     {
       id:"e1",
