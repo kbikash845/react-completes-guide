@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import ExpenseItem from './Components/ExpenseItem';
-import Expanse from './Components/Expanse';
+// import ExpenseItem from './Components/Expanses/ExpenseItem';
+import Expanse from './Components/Expenses/Expanse';
+
 
 
 
