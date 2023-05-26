@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 // import ExpenseItem from './Components/Expanses/ExpenseItem';
+import NewExpanses from './Components/NewExpanses/New_Expanse';
 import Expanse from './Components/Expenses/Expanse';
+
 
 
 
@@ -42,8 +44,9 @@ const App=() =>{
   
   return (
   <div>
-  <h1>Bikash kumar</h1>
+  <NewExpanses/>
   <Expanse items={expanses}/>
+  
   </div>
   )
 }

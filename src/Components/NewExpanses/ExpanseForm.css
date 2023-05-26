@@ -1,0 +1,34 @@
+.new-expense__controls{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+.new-expense__controls label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.new-expense__controls input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+}
+.btn1{
+    padding: 8px;
+    background-color: aqua;
+    border-radius: 8px;
+    border-color: white;
+}
+
+
+.new-expanse__action{
+    text-align: right;
+}
