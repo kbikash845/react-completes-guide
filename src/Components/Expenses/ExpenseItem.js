@@ -11,13 +11,16 @@ import "./ExpenseItem.css"
 
 const ExpenseItem=(props) =>{
    const [title,setTitle]=useState(props.title)
-   const [amount,setTitle1]=useState(props.amount)
+   const [amount,setAmount]=useState(props.amount)
 
   
-  const clickHandler=()=>{
+  const clickTitleHandler=()=>{
     setTitle("updated")
-    setTitle1(100)
     
+    
+  }
+  const clickAmountHandler=()=>{
+    setAmount(100);
   }
  
   
@@ -28,7 +31,9 @@ const ExpenseItem=(props) =>{
       <h2>{title}</h2>
       <div className='expense-item__price'>{amount}</div>
       </div>
-      <button  onClick={clickHandler}>Changed Title</button>
+      <button  onClick={clickTitleHandler}>Changed Title</button>
+      <button  onClick={clickAmountHandler}>Changed Amount</button>
+
       
     </Card>
   )
