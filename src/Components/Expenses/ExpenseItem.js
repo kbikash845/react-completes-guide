@@ -10,31 +10,18 @@ import "./ExpenseItem.css"
 
 
 const ExpenseItem=(props) =>{
-   const [title,setTitle]=useState(props.title)
-   const [amount,setAmount]=useState(props.amount)
+  //  const [title,setTitle]=useState(props.title)
+  //  const [amount,setAmount]=useState(props.amount)
 
-  
-  const clickTitleHandler=()=>{
-    setTitle("updated")
-    
-    
-  }
-  const clickAmountHandler=()=>{
-    setAmount(100);
-  }
- 
-  
-  return (
+   
+    return (
     <Card className='expense-item'>
       <ExpanseDate date={props.date}/>
       <div className='expense-item__discription'>
-      <h2>{title}</h2>
-      <div className='expense-item__price'>{amount}</div>
+      <h2>{props.title}</h2>
+      <div className='expense-item__price'>{props.amount}</div>
       </div>
-      <button  onClick={clickTitleHandler}>Changed Title</button>
-      <button  onClick={clickAmountHandler}>Changed Amount</button>
-
-      
+               
     </Card>
   )
 }
