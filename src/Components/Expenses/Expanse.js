@@ -19,13 +19,14 @@ export default function Expanse(props) {
   return (
     <Card className='expenses'>
     <ExpanseFilter selected={filteredYear} onChangeFilter={filteresChangeHandler}/>
-    {props.items.map((expanse)=>(
-     <ExpenseItem
-     key={expanse.id}
-      title={expanse.title} 
-      amount={expanse.amount} 
-      date={expanse.date}/>
-    ))}
+    {filteredExpenses.length===0 ? (<p style={{ color: 'white', fontWeight:'bold'}}>NO Expanse found</p> ):filteredExpenses.map((expanse)=>(
+      <ExpenseItem
+      key={expanse.id}
+       title={expanse.title} 
+       amount={expanse.amount} 
+       date={expanse.date}/>
+     ))}
+    {}
    
     </Card>
   )
