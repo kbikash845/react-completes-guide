@@ -40,11 +40,17 @@ const App=() =>{
         date: new Date(2021, 5, 12),
         location: "Carpenter",
     }]
+
+    const AddExpanseDatahandler=expanse=>{
+      console.log("App js");
+      console.log(expanse)
+    }
+
   
   
   return (
   <div>
-  <NewExpanses/>
+  <NewExpanses onAddExpanse={AddExpanseDatahandler}/>
   <Expanse items={expanses}/>
   
   </div>
