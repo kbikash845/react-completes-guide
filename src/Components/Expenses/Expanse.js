@@ -4,6 +4,7 @@ import ExpenseItem from './ExpenseItem'
 import ExpanseFilter from './ExpanseFilter';
 import "./Expanse.css";
 import ExpanseList from './ExpanseList';
+import ExpanseChart from './ExpanseChart';
 
 
 export default function Expanse(props) {
@@ -21,6 +22,7 @@ export default function Expanse(props) {
   return (
     <Card className='expenses'>
     <ExpanseFilter selected={filteredYear} onChangeFilter={filteresChangeHandler}/>
+    <ExpanseChart expenses={filteredExpenses}/>
 
    <ExpanseList items={filteredExpenses}/>
    

@@ -2,7 +2,7 @@ import React from "react";
 import "./ExpenseItem.css";
 import ExpanseDate from './ExpanseDate';
 import Card from "../UI/Card";
-import "./ExpenseItem.css"
+
 
 
 
