@@ -3,6 +3,7 @@ import Card from '../UI/Card';
 import ExpenseItem from './ExpenseItem'
 import ExpanseFilter from './ExpanseFilter';
 import "./Expanse.css";
+import ExpanseList from './ExpanseList';
 
 
 export default function Expanse(props) {
@@ -14,19 +15,14 @@ export default function Expanse(props) {
   };
   const filteredExpenses = props.items.filter((expense) => {
     return expense.date.getFullYear().toString() === filteredYear;
-  });
+  })
+
   
   return (
     <Card className='expenses'>
     <ExpanseFilter selected={filteredYear} onChangeFilter={filteresChangeHandler}/>
-    {filteredExpenses.length===0 ? (<p style={{ color: 'white', fontWeight:'bold'}}>NO Expanse found</p> ):filteredExpenses.map((expanse)=>(
-      <ExpenseItem
-      key={expanse.id}
-       title={expanse.title} 
-       amount={expanse.amount} 
-       date={expanse.date}/>
-     ))}
-    {}
+
+   <ExpanseList items={filteredExpenses}/>
    
     </Card>
   )

@@ -10,11 +10,10 @@ import "./ExpenseItem.css"
 
 
 const ExpenseItem=(props) =>{
-  //  const [title,setTitle]=useState(props.title)
-  //  const [amount,setAmount]=useState(props.amount)
-
+  
    
     return (
+      <li>
     <Card className='expense-item'>
       <ExpanseDate date={props.date}/>
       <div className='expense-item__discription'>
@@ -23,6 +22,7 @@ const ExpenseItem=(props) =>{
       </div>
                
     </Card>
+    </li>
   )
 }
 
